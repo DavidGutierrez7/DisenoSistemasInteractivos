@@ -1,0 +1,32 @@
+# =================================================================
+# Dependencias Requeridas para el Sistema de Recordatorios por Voz
+# =================================================================
+
+# --- Hardware y Audio ---
+# RPi.GPIO: Obligatoria para interactuar con los pines físicos de Raspberry Pi
+# (botones rojo y verde).
+RPi.GPIO
+
+# numpy: Biblioteca fundamental para manejar eficientemente los arrays de datos
+# del buffer de audio durante la grabación.
+numpy
+
+# sounddevice: Para la interacción de bajo nivel con el micrófono y la tarjeta
+# de sonido para la grabación de audio.
+sounddevice
+
+# playsound: Biblioteca simple para reproducir archivos de audio (las alertas TTS).
+playsound
+
+# edge-tts: Módulo utilizado para generar voz sintética (Text-to-Speech)
+# aprovechando los servicios de Edge/Microsoft.
+edge-tts
+
+# --- Inteligencia Artificial y Procesamiento de Lenguaje ---
+# faster-whisper: Implementación rápida y eficiente del modelo Whisper de OpenAI
+# para transcribir el audio grabado a texto.
+faster-whisper
+
+# huggingface-hub: Para interactuar con los modelos LLM (Llama) alojados en
+# Hugging Face (para la extracción y narración de tareas).
+huggingface-hub
